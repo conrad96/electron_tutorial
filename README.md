@@ -10,6 +10,6 @@ Todo List Desktop Application
 --------------------
     Usage
 --------------------
-a) Goto Menu click Add Todo
-b) Type Todo Entry and Save
-c) Click checbox to if task is completed
+1. Goto Menu click Add Todo
+2. Type Todo Entry and Save
+3. Click checbox to if task is completed
