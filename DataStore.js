@@ -6,10 +6,26 @@ module.exports = {
         store.set('todos', [
             {
                 id: '1',
-                title: 'Learning Electron',
+                title: 'Buy milk at the store',
+                completed: false 
+            },
+            {
+                id: '2',
+                title: 'Goto the gym',
+                completed: false 
+            },
+            {
+                id: '3',
+                title: 'Go for a swim',
+                completed: false 
+            },
+            {
+                id: '4',
+                title: 'Prepare dinner',
                 completed: false 
             }
         ]);
+
         return store.get('todos') || [];
     }
 }

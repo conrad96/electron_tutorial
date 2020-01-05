@@ -9,7 +9,7 @@ function mainWindow(){
     });     
     firstWindow.once('show', ()=>{
         firstWindow.webContents.send('fetch-todos', getTodos())
-    })
+    })    
 }
 
 app.on('ready', mainWindow);
