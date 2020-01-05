@@ -1,7 +1,7 @@
 const {app, BrowserWindow, Menu, ipcMain} = require('electron');
 const path = require('path')
 const window = require('./window');
-const {getTodos, addTodo} = require('./DataStore');
+const {getTodos, addTodo, updateTodo} = require('./DataStore');
 let firstWindow;
 
 function mainWindow(){
@@ -42,3 +42,8 @@ ipcMain.on('save-todo', (event, todo)=> {
     addTodo(todo)
     firstWindow.send('fetch-todos', getTodos());
 });
+
+ipcMain.on('update-todo', (event, todoId)=>{
+    updateTodo(todoId);
+    firstWindow.send('fetch-todos', getTodos());
+})
