@@ -2,11 +2,7 @@ const DataStore = require('electron-store')
 const store = new DataStore();
 
 module.exports = {
-    getTodos(){
-        store.set('todos', [
-            
-        ]);
-
+    getTodos(){        
         return store.get('todos') || [];
     },
     addTodo(newTodo){
